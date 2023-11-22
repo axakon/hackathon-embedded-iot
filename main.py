@@ -6,6 +6,8 @@ import utime # Handles waiting and time
 import urequests # Handles HTTP requests
 import uping
 
+# Docs and more info about Microdot (the webserver) can be found here
+# https://microdot.readthedocs.io/en/latest/intro.html#defining-routes
 from microdot import Microdot, send_file, redirect
 from microdot_cors import CORS
 
