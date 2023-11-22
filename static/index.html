@@ -33,7 +33,7 @@
     </div>
 
     <script>
-        const isRunningOnDevice = false;
+        const isRunningOnDevice = true;
         const baseApiPath = isRunningOnDevice ? "/api/" : "http://<insert Pi Pico IP address here>:5000/api/";
 
         async function getPinState(pin) {
@@ -44,6 +44,7 @@
                 document.getElementById("ledState").innerHTML = await response.text();
             });
         }
+        // Add more code here!
     </script>
   </body>
 </html>
